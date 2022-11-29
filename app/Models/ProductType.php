@@ -17,7 +17,7 @@ class ProductType extends Model
 
     public function getSelector()
     {
-        $productTypes = $this->all();
+        $productTypes = $this->orderBy('position')->get();
         $selector = [];
         foreach ($productTypes as $productType) {
             $selector[$productType->id] = $productType->name;

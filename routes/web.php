@@ -28,3 +28,10 @@ Route::get('/products/new', [App\Http\Controllers\ProductController::class, 'new
 Route::post('/products/save', [App\Http\Controllers\ProductController::class, 'saveNewProduct'])->name('products');
 Route::get('/products/id/{id}', [App\Http\Controllers\ProductController::class, 'editProduct'])->name('products');
 Route::post('/products/update', [App\Http\Controllers\ProductController::class, 'saveProduct'])->name('products');
+
+
+Route::get('/groups', [App\Http\Controllers\ProductTypeController::class, 'listProductTypes'])->name('groups');
+Route::get('/groups/new', [App\Http\Controllers\ProductTypeController::class, 'newProductType'])->name('groups');
+Route::post('/groups/save', [App\Http\Controllers\ProductTypeController::class, 'saveNewProductType'])->name('groups');
+Route::get('/groups/id/{id}', [App\Http\Controllers\ProductTypeController::class, 'editProductType'])->name('groups');
+Route::post('/groups/update', [App\Http\Controllers\ProductTypeController::class, 'saveProductType'])->name('groups');

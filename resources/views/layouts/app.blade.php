@@ -34,6 +34,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li><a href="/products" class="btn btn-primary">Produtos</a></li>
+                        <li>&nbsp;<a href="/groups" class="btn btn-primary">Grupos</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
