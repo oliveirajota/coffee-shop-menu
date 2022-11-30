@@ -17,7 +17,7 @@
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8 p-4">
 
 
-                <div class="mx-auto" style="width: 400px;">
+                <div class="mx-auto">
                     <img src="/logo.svg" width="100%"/>
                     <h1 class="text-center">Cardápio Online</h1>
                 </div>
