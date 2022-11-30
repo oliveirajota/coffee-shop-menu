@@ -19,7 +19,7 @@
 
                 <div class="mx-auto">
                     <img src="/logo.svg" width="100%"/>
-                    <h1 class="text-center">Cardápio Online</h1>
+                    <h1 class="text-center">Menu Digital</h1>
                 </div>
 
                 @foreach($groups as $group)
