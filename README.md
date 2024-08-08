@@ -27,7 +27,7 @@ Before you start, ensure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/coffee-shop-menu.git
+    git clone https://github.com/oliveirajota/coffee-shop-menu.git
     cd coffee-shop-menu
     ```
 
