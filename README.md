@@ -14,49 +14,47 @@ An intuitive and user-friendly mobile menu designed for bars, pubs, and coffee s
 
 ### Prerequisites
 
-Before you start, ensure you have the following:
+Before you start, ensure you have the following installed:
 
-- Node.js & npm installed
-- A modern web browser for testing
-- A mobile device or emulator for final testing
+- PHP >= ^7.3|^8.0
+- Laravel = 7.3
+- Composer
+- MySQL or another supported database
+- Web server (Apache, Nginx, etc.)
 
 ### Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/interactive-mobile-menu.git
-    cd interactive-mobile-menu
+    git clone https://github.com/yourusername/coffee-shop-menu.git
+    cd coffee-shop-menu
     ```
 
-2. Install dependencies:
+2. Install PHP dependencies using Composer:
 
     ```bash
-    npm install
+    composer install
     ```
 
-3. Set up environment variables by copying the `.env.example` file and filling in the necessary details:
+3. Copy the `.env.example` file to create your environment configuration:
 
     ```bash
     cp .env.example .env
     ```
 
-4. Start the development server:
+4. Set up your environment variables in the `.env` file, including database credentials and any other necessary configurations.
+
+5. Generate the application key:
 
     ```bash
-    npm start
+    php artisan key:generate
     ```
 
-5. Access the application on your local machine:
+6. Run database migrations to create the necessary tables:
 
+    ```bash
+    php artisan migrate
     ```
-    http://localhost:3000
-    ```
 
-### Usage
-
-#### Admin Tool
-
-- **Add Products**: Navigate to the admin panel and click "Add Product". Fill in the product's name, price, description, and upload an image. Save to add it to your menu.
-- **Manage Availability**: Toggle the availability of products by clicking the activate/deactivate button next to each item.
-- **Organize
+7. (Optional) Seed the
